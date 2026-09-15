@@ -10,8 +10,34 @@ app = FastAPI(
     description="AI-powered Legal Metrology Compliance System",
     version="1.0.0"
 )
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+@app.get("/")
+def home():
+    return {
+        "message": "MetraGuard API is running",
+        "status": "online"
+    }
+
+
+@app.get("/health")
+def health():
+    return {
+        "status": "healthy"
+    }
+
+
 @app.post("/analyze")
 async def analyze_product(file: UploadFile = File(...)):
+
     image_bytes = await file.read()
 
     image = Image.open(io.BytesIO(image_bytes))
@@ -88,17 +114,3 @@ async def analyze_product(file: UploadFile = File(...)):
             "detected_fields": detected_fields
         }
     }
-    @app.get("/")
-def home():
-    return {
-        "message": "MetraGuard API is running",
-        "status": "online"
-    }
-
-
-@app.get("/health")
-def health():
-    return {
-        "status": "healthy"
-    }
-    
