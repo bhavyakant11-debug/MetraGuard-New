@@ -87,4 +87,18 @@ async def analyze_product(file: UploadFile = File(...)):
             "compliance_score": score,
             "detected_fields": detected_fields
         }
-    }s
+    }
+    @app.get("/")
+def home():
+    return {
+        "message": "MetraGuard API is running",
+        "status": "online"
+    }
+
+
+@app.get("/health")
+def health():
+    return {
+        "status": "healthy"
+    }
+    
