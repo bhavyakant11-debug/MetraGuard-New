@@ -37,7 +37,6 @@ def health():
 
 @app.post("/analyze")
 async def analyze_product(file: UploadFile = File(...)):
-
     image_bytes = await file.read()
 
     image = Image.open(io.BytesIO(image_bytes))
