@@ -87,4 +87,4 @@ async def analyze_product(file: UploadFile = File(...)):
             "compliance_score": score,
             "detected_fields": detected_fields
         }
-    }
+    }s
