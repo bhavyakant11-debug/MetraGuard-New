@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MetraGuard — Product Compliance</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <div class="logo-mark">M</div>
+            <span>Metra<span>Guard</span></span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#scanner">Scanner</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#about">About</a>
+        </div>
+
+        <a href="#scanner" class="nav-button">
+            Scan a label
+        </a>
+
+    </nav>
+
+
+    <!-- HERO -->
+    <main>
+        <div class="hero-visual">
+
+    <div class="product-preview">
+        <div class="product-bottle">
+            <div class="product-label">
+                <strong>PRODUCT</strong>
+                <span>COMPLIANCE</span>
+                <span>CHECK</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="compliance-card">
+
+        <div class="compliance-title">
+            <span>✓</span>
+            AI Compliance Scan
+        </div>
+
+        <div class="compliance-row">
+            <span>Manufacturer</span>
+            <strong>✓</strong>
+        </div>
+
+        <div class="compliance-row">
+            <span>Net Quantity</span>
+            <strong>✓</strong>
+        </div>
+
+        <div class="compliance-row">
+            <span>MRP</span>
+            <strong>✓</strong>
+        </div>
+
+        <div class="compliance-row">
+            <span>Date Information</span>
+            <strong>✓</strong>
+        </div>
+
+        <div class="compliance-row">
+            <span>Consumer Care</span>
+            <strong>✓</strong>
+        </div>
+
+        <div class="compliance-result">
+            <strong>COMPLIANT</strong>
+            <span>All key declarations detected</span>
+        </div>
+
+    </div>
+
+</div>
+
+        <section class="hero">
+
+            <div class="hero-badge">
+                <span class="status-dot"></span>
+                AI-powered compliance checking
+            </div>
+
+            <h1>
+                Check your product label.
+                <span>Before it reaches the shelf.</span>
+            </h1>
+
+            <p class="hero-description">
+                MetraGuard uses AI-powered image analysis to check product
+                labels for essential Legal Metrology declarations in seconds.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#scanner" class="primary-button">
+                    Scan a label
+                    <span>→</span>
+                </a>
+
+                <a href="#how-it-works" class="secondary-button">
+                    See how it works
+                </a>
+            </div>
+
+            <div class="trust-row">
+                <div>
+                    <strong>5+</strong>
+                    <span>Key declarations checked</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <div>
+                    <strong>AI</strong>
+                    <span>Powered analysis</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <div>
+                    <strong>Fast</strong>
+                    <span>Results in seconds</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- SCANNER -->
+        <section class="scanner-section" id="scanner">
+
+            <div class="section-heading">
+                <span class="eyebrow">LABEL SCANNER</span>
+
+                <h2>
+                    Analyze your product label
+                </h2>
+
+                <p>
+                    Upload a clear image of your product packaging
+                    and let MetraGuard check it.
+                </p>
+            </div>
+
+
+            <div class="scanner-card">
+
+                <div class="scanner-top">
+
+                    <div>
+                        <div class="scanner-icon">⌁</div>
+
+                        <h3>
+                            Upload product label
+                        </h3>
+
+                        <p>
+                            PNG, JPG or JPEG · Clear images work best
+                        </p>
+                    </div>
+
+                    <div class="secure-badge">
+                        🔒 Secure
+                    </div>
+
+                </div>
+
+
+                <label class="upload-area" id="upload-area">
+
+                    <input
+                        type="file"
+                        id="file-input"
+                        accept="image/png,image/jpeg,image/jpg"
+                    >
+
+                    <div class="upload-icon">
+                        ↑
+                    </div>
+
+                    <h4>
+                        Drop your label image here
+                    </h4>
+
+                    <p>
+                        or <span>browse from your computer</span>
+                    </p>
+
+                    <div id="file-name"></div>
+
+                </label>
+
+
+                <button class="scan-button" id="scan-button">
+                    <span>Scan for compliance</span>
+                    <span>→</span>
+                </button>
+
+                <div class="scan-status" id="scan-status"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOW IT WORKS -->
+        <section class="how-section" id="how-it-works">
+
+            <div class="section-heading">
+                <span class="eyebrow">HOW IT WORKS</span>
+
+                <h2>
+                    Compliance, simplified.
+                </h2>
+
+                <p>
+                    Three simple steps from product image to compliance insight.
+                </p>
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div class="step-icon">
+                        📷
+                    </div>
+
+                    <h3>
+                        Upload
+                    </h3>
+
+                    <p>
+                        Upload a clear photograph of your product label.
+                    </p>
+
+                </div>
+
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div class="step-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Analyze
+                    </h3>
+
+                    <p>
+                        Our system extracts text and checks required declarations.
+                    </p>
+
+                </div>
+
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <div class="step-icon">
+                        ✓
+                    </div>
+
+                    <h3>
+                        Review
+                    </h3>
+
+                    <p>
+                        Get a clear compliance result and identify potential issues.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHAT WE CHECK -->
+        <section class="checks-section">
+
+            <div class="checks-content">
+
+                <div>
+                    <span class="eyebrow">WHAT WE CHECK</span>
+
+                    <h2>
+                        The details that matter.
+                    </h2>
+
+                    <p>
+                        MetraGuard looks for essential information commonly
+                        required on packaged products.
+                    </p>
+                </div>
+
+
+                <div class="checks-grid">
+
+                    <div class="check-item">
+                        <div class="check-icon">✓</div>
+                        <div>
+                            <strong>Manufacturer</strong>
+                            <span>Manufacturer / packer / importer declaration</span>
+                        </div>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="check-icon">✓</div>
+                        <div>
+                            <strong>Net Quantity</strong>
+                            <span>Declared quantity of the packaged product</span>
+                        </div>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="check-icon">✓</div>
+                        <div>
+                            <strong>MRP</strong>
+                            <span>Maximum retail sale price declaration</span>
+                        </div>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="check-icon">✓</div>
+                        <div>
+                            <strong>Date Information</strong>
+                            <span>Relevant manufacturing / packing information</span>
+                        </div>
+                    </div>
+
+                    <div class="check-item">
+                        <div class="check-icon">✓</div>
+                        <div>
+                            <strong>Consumer Care</strong>
+                            <span>Consumer complaint contact information</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
+
+            <div class="about-card">
+
+                <div class="about-symbol">
+                    M
+                </div>
+
+                <div>
+                    <span class="eyebrow">ABOUT METRAGUARD</span>
+
+                    <h2>
+                        Making product compliance easier.
+                    </h2>
+
+                    <p>
+                        MetraGuard is an AI-powered tool designed to help
+                        businesses and inspectors quickly identify potential
+                        missing declarations on packaged product labels.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            <div class="logo-mark">M</div>
+            <strong>MetraGuard</strong>
+        </div>
+
+        <p>
+            AI-powered Legal Metrology compliance checking.
+        </p>
+
+        <span>
+            © 2026 MetraGuard
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
